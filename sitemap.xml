@@ -18,7 +18,7 @@
   </url>
   
   <url>
-    <loc>http://sirinath.com/pages/contact/</loc>
+    <loc>http://sirinath.com/page/contact/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,12 +28,12 @@
   </url>
   
   <url>
-    <loc>http://sirinath.com/posts/test/</loc>
+    <loc>http://sirinath.com/2020/01/01/test/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sirinath.com/pages/</loc>
+    <loc>http://sirinath.com/page/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,12 +48,12 @@
   </url>
   
   <url>
-    <loc>http://sirinath.com/posts/</loc>
+    <loc>http://sirinath.com/post/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sirinath.com/pages/projects/</loc>
+    <loc>http://sirinath.com/page/projects/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://sirinath.com/pages/about/</loc>
+    <loc>http://sirinath.com/page/about/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   

@@ -23,12 +23,17 @@
   </url>
   
   <url>
-    <loc>https://sirinath.com/pages/</loc>
+    <loc>https://sirinath.com/tags/first/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sirinath.com/series/personal/</loc>
+    <loc>https://sirinath.com/posts/test/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sirinath.com/pages/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,17 +43,27 @@
   </url>
   
   <url>
+    <loc>https://sirinath.com/series/personal/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sirinath.com/posts/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sirinath.com/pages/projects/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sirinath.com/series/projects/</loc>
+    <loc>https://sirinath.com/categories/projects/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sirinath.com/categories/projects/</loc>
+    <loc>https://sirinath.com/series/projects/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,6 +89,21 @@
   
   <url>
     <loc>https://sirinath.com/tags/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sirinath.com/tags/test/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sirinath.com/categories/test/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sirinath.com/series/test/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   

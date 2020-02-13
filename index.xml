@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>First Test Post</title>
+      <link>https://sirinath.com/posts/test/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sirinath.com/posts/test/</guid>
+      <description>Just a test post</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>https://sirinath.com/pages/projects/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>

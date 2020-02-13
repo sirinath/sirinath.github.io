@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Suminda Sirinath Salpitikorala Dharmasena</title>
+    <link>http://sirinath.com/series/</link>
+    <description>Recent content in Series on Suminda Sirinath Salpitikorala Dharmasena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>Suminda Sirinath Salpitikorala Dharmasena</copyright>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sirinath.com/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>personal</title>
+      <link>http://sirinath.com/series/personal/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sirinath.com/series/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>http://sirinath.com/series/projects/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sirinath.com/series/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>standalone</title>
+      <link>http://sirinath.com/series/standalone/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sirinath.com/series/standalone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>http://sirinath.com/series/test/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://sirinath.com/series/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

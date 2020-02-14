@@ -361,21 +361,6 @@ table {
 .post-tags {
     float: left;
     margin: 3px 0 0;
-	padding: 5px;
-	border-radius: 4px;
-	border: 2px solid $primary;
-	text-align: center;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	
-	a {
-		display: inline-block;
-	}
-	
-    a:hover { 
-		color: $secondary;
-		border: 2px solid $secondary;
-	}
 }
 
 .share {
@@ -417,6 +402,100 @@ table {
 }
 
 .page-number { display: none; }
+
+/* ============================================================ */
+/* Taxonomies */
+/* ============================================================ */
+
+$tags1: #F03838;
+$tags2: #FCF5F5;
+
+.taxonomies-tags {
+	line-height: 100%;
+	margin: 3px 0 0;
+	color: $tags1;
+	border: 1px solid $tags1;
+	background-color: $tags2;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	
+	&:hover {
+		color: $tags2;
+		border: 1px solid $tags2;
+		background-color: $tags1;
+	}
+}
+
+a.taxonomies-tags:hover {
+	color: $tags2;
+	border: 1px solid $tags2;
+	background-color: $tags1;
+}
+
+$series1: #38F038;
+$series2: #F5FCF5;
+
+.taxonomies-series {
+	line-height: 100%;
+	margin: 3px 0 0;
+	color: $series1;
+	border: 1px solid $series1;
+	background-color: $series2;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	
+	&:hover {
+		color: $series2;
+		border: 1px solid $series2;
+		background-color: $series1;
+	}
+}
+
+a.taxonomies-series:hover {
+	color: $series2;
+	border: 1px solid $series2;
+	background-color: $series1;
+}
+
+$categories1: #3838F0;
+$categories2: #F5F5FC;
+
+.taxonomies-categories {
+	line-height: 100%;
+	margin: 3px 0 0;
+	color: $categories1;
+	border: 1px solid $categories1;
+	background-color: $categories2;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	
+	&:hover {
+		color: $categories2;
+		border: 1px solid $categories2;
+		background-color: $categories1;
+	}
+}
+
+a.taxonomies-categories:hover {
+	color: $categories2;
+	border: 1px solid $categories2;
+	background-color: $categories1;
+}
 
 /* ============================================================ */
 /* Post Index */
@@ -585,4 +664,191 @@ table {
 
         &:hover { color: #FEFEFE; }
     }
+}
+
+/* ============================================================ */
+/* Media Queries */
+/* ============================================================ */
+
+@media only screen and (max-width: 800px) {
+    .post-stub-tag { display: none; }
+}
+
+@media only screen and (max-width: 600px) {
+    h1, h2 { margin-bottom: 20px; }
+
+    p { margin-bottom: 20px; }
+
+    ul, ol { margin-bottom: 20px; }
+
+    img { margin: 30px 0; }
+
+    blockquote { margin: 30px 0;}
+
+    pre { margin: 20px 0; }
+
+    hr { margin: 35px 0; }
+
+    .site-header {
+        padding-top: 40px;
+    }
+
+    .site-title {
+        float: none;
+        margin-bottom: 15px;
+
+        a {
+            float: none;
+        }
+
+        + .button-square {
+            margin-left: 0;
+        }
+    }
+
+    .site-nav-item {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .post-header {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        p {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+    }
+
+    .post-title,
+    .page-title,
+    .author-name,
+    .author-heading {
+        font-size: 42px;
+        margin-top: 5px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .post-date,
+    .blog-description,
+    .author-meta {
+        margin-top: 20px;
+
+        &:after, &:before {
+            margin-top: 30px;
+        }
+    }
+
+    .author-profile {
+        &:after, &:before {
+            margin-top: 20px;
+        }
+    }
+
+    .post-stub-title { display: block; }
+
+    .post-stub-date:before {
+        content: "";
+        display: block;
+    }
+
+    .post-list {
+        margin-top: 20px;
+    }
+
+    .post-container,
+    .post-list,
+    .author-profile {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .post-tags { width: 100%; }
+
+    .post-stub a,
+    .post-stub a:hover {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .share {
+        float: left;
+        margin-top: 20px;
+
+        a {
+            margin: 0 5px 0 0;
+        }
+    }
+
+    .footer {
+        margin-top: 50px;
+
+        .site-title-wrapper {
+            text-align: center;
+        }
+
+        .button-jump-top {
+            clear: both;
+            display: inline-block;
+            float: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .site-header {
+        padding-top: 40px;
+    }
+
+    .post-title,
+    .page-title,
+    .author-name,
+    .author-heading {
+        font-size: 30px;
+        line-height: 1.2;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .post-date,
+    .blog-description,
+    .author-meta {
+        line-height: 1.6;
+    }
+
+    .post-date,
+    .blog-description,
+    .author-meta {
+        margin-top: 10px;
+
+        &:after, &:before {
+            margin-top: 20px;
+        }
+    }
+
+    .author-profile {
+        &:after, &:before {
+            margin-top: 10px;
+        }
+    }
+
+    .post-container,
+    .post-list,
+    .author-profile {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .author-avatar {
+        display: block;
+        margin: 0 auto 18px;
+    }
+
+    .author-meta span {
+        display: block;
+        margin: 18px 0;
+    }
+
+    .footer-copyright { padding: 0 10px; }
 }

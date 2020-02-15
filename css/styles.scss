@@ -205,7 +205,6 @@ table {
 .button-square {
     background: $primary;
     color: #FFF;
-    float: left;
     font-size: 17px;
     margin: 0 0 0 10px;
     padding: 3px 8px 4px;
@@ -228,24 +227,25 @@ table {
 .site-header {
     padding: 40px 0 0;
     overflow: auto;
-    text-align: center;
+	text-align: center;
     text-transform: uppercase;
 }
 
 .site-title-wrapper {
-    display: table;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .site-title {
-    float: left;
     font-size: 14px;
     font-weight: 600;
     margin: 0;
+	padding: 3px 8px 4px;
     text-transform: uppercase;
 
     a {
-        float: left;
         background: $primary;
         color: #FEFEFE;
         padding: 5px 10px 6px;
@@ -253,16 +253,25 @@ table {
         &:hover { background: $secondary; }
     }
 }
-.site-logo {
-    display: block;
 
-    img { margin: 0; }
+.site-logo {
+    display: inline-block;
+
+    img {
+		margin: 0;
+		border-radius: 10%;
+	}
 }
 
 .site-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
     list-style: none;
     margin: 28px 0 10px;
     padding: 0;
+	text-align:center;
 }
 
 .site-nav-item {
@@ -348,7 +357,16 @@ table {
     }
 }
 
-.post-footer { margin-top: 5px; }
+.post-footer { 
+	margin-top: 5px;
+}
+
+.post-footer-warper {
+	display: flex;
+	flex-direction: row;
+	align-content: stretch;
+	justify-content: space-between;
+}
 
 .post-tags,
 .share {
@@ -359,12 +377,18 @@ table {
 }
 
 .post-tags {
+	display: inline-block;
     float: left;
     margin: 3px 0 0;
 }
 
 .share {
     float: right;
+	flex-wrap: nowrap;
+	justify-content: right;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
 
     a {
         background: $primary;
@@ -410,101 +434,95 @@ table {
 $tags1: #F03838;
 $tags2: #FCF5F5;
 
-.taxonomies-tags {
-	line-height: 100%;
-	margin: 3px 0 0;
-	color: $tags1;
-	border: 1px solid $tags1;
-	background-color: $tags2;
-	display: inline-block;
-	padding: 3px;
-	border-radius: 4px;
-	text-align: center;
-	text-decoration: none;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	
-	&:hover {
-		color: $tags2;
-		border: 1px solid $tags2;
-		background-color: $tags1;
-	}
-}
-
-a.taxonomies-tags:hover {
-	color: $tags2;
-	border: 1px solid $tags2;
-	background-color: $tags1;
-}
-
 $series1: #38F038;
 $series2: #F5FCF5;
-
-.taxonomies-series {
-	line-height: 100%;
-	margin: 3px 0 0;
-	color: $series1;
-	border: 1px solid $series1;
-	background-color: $series2;
-	display: inline-block;
-	padding: 3px;
-	border-radius: 4px;
-	text-align: center;
-	text-decoration: none;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	
-	&:hover {
-		color: $series2;
-		border: 1px solid $series2;
-		background-color: $series1;
-	}
-}
-
-a.taxonomies-series:hover {
-	color: $series2;
-	border: 1px solid $series2;
-	background-color: $series1;
-}
 
 $categories1: #3838F0;
 $categories2: #F5F5FC;
 
-.taxonomies-categories {
-	line-height: 100%;
-	margin: 3px 0 0;
-	color: $categories1;
-	border: 1px solid $categories1;
-	background-color: $categories2;
-	display: inline-block;
-	padding: 3px;
-	border-radius: 4px;
-	text-align: center;
-	text-decoration: none;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	
-	&:hover {
-		color: $categories2;
-		border: 1px solid $categories2;
-		background-color: $categories1;
-	}
+.post-taxonomy-featured {
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFF;
+    background: $secondary;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 10px;
+    margin: 7px 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
 }
 
-a.taxonomies-categories:hover {
-	color: $categories2;
-	border: 1px solid $categories2;
-	background-color: $categories1;
+.post-taxonomy-featured:hover {
+	background: $primary; 
+	border-color: #FFF;
+	color: #FFF;
+}
+
+.post-taxonomy-series {
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $series2;
+    background: $series1;
+    border-radius: 4px;
+    color: $series2;
+    font-size: 10px;
+    margin: 7px 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.post-taxonomy-series:hover {
+	background: $series2; 
+	border-color: $series1;
+	color: $series1;
+}
+
+.post-taxonomy-categories {
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $categories2;
+    background: $categories1;
+    border-radius: 4px;
+    color: $categories2;
+    font-size: 10px;
+    margin: 7px 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.post-taxonomy-categories:hover {
+	background: $categories2; 
+	border-color: $categories1;
+	color: $categories1;
+}
+
+.post-taxonomy-tags {
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $tags2;
+    background: $tags1;
+    border-radius: 4px;
+    color: $tags2;
+    font-size: 10px;
+    margin: 7px 0 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.post-taxonomy-tags:hover {
+	background: $tags2; 
+	border-color: $tags1;
+	color: $tags1;
 }
 
 /* ============================================================ */
 /* Post Index */
 /* ============================================================ */
-
-.post-list {
-    list-style: none;
-    padding: 0;
-}
 
 .post-stub {
     border-bottom: 1px dotted $secondary;
@@ -526,20 +544,55 @@ a.taxonomies-categories:hover {
             color: $primary;
             padding: 20px 12px;
 
-            .post-stub-tag { background: $primary; }
+            .post-taxonomy-featured { 
+				background: $primary; 
+				border-color: #FFF;
+				color: #FFF;
+			}
+			
+			.post-taxonomy-tags { 
+				background: $tags2; 
+				border-color: $tags1;
+				color: $tags1;
+			}
+			
+			.post-taxonomy-series { 
+				background: $series2; 
+				border-color: $series1; 
+				color: $series1;
+			}
+			
+			.post-taxonomy-categories { 
+				background: $categories2; 
+				border-color: $categories1;
+				color: $categories1;
+			}
         }
     }
 }
 
-.post-stub-tag {
-    background: $secondary;
-    border-radius: 3px;
-    color: #FFF;
-    float: right;
-    font-size: 10px;
-    margin: 7px 0 0;
-    padding: 0 5px;
-    text-transform: uppercase;
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-stub-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: stretch;
+	justify-content: space-between;
+}
+
+.post-stub-details {
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+
+.post-stub-taxonomies {
+	flex-wrap: wrap;
+	margin-left: 30px;
+	text-align: right;
 }
 
 .post-stub-title {
@@ -671,7 +724,10 @@ a.taxonomies-categories:hover {
 /* ============================================================ */
 
 @media only screen and (max-width: 800px) {
-    .post-stub-tag { display: none; }
+    .post-taxonomy-featured { display: none; }
+	.post-taxonomy-tags { display: none; }
+	.post-taxonomy-series { display: none; }
+	.post-taxonomy-categories { display: none; }
 }
 
 @media only screen and (max-width: 600px) {

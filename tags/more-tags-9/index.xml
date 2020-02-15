@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>more tags 9 on Suminda Sirinath Salpitikorala Dharmasena</title>
+    <link>https://sirinath.com/tags/more-tags-9/</link>
+    <description>Recent content in more tags 9 on Suminda Sirinath Salpitikorala Dharmasena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <copyright>Suminda Sirinath Salpitikorala Dharmasena</copyright>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sirinath.com/tags/more-tags-9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second Test Post</title>
+      <link>https://sirinath.com/posts/test-2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sirinath.com/posts/test-2/</guid>
+      <description>Just a test post</description>
+    </item>
+    
+  </channel>
+</rss>

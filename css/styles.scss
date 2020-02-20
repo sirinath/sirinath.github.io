@@ -239,6 +239,7 @@ table {
 }
 
 .site-title {
+	word-wrap: break-word;
     font-size: 14px;
     font-weight: 600;
     margin: 0;
@@ -264,10 +265,6 @@ table {
 }
 
 .site-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
     list-style: none;
     margin: 28px 0 10px;
     padding: 0;
@@ -327,7 +324,7 @@ table {
     &:after {
         border-bottom: 1px dotted $secondary;
         content: "";
-        display: block;
+        display: inline-block;
         margin: 40px auto 0;
         width: 100px;
     }
@@ -384,7 +381,6 @@ table {
 
 .share {
     float: right;
-	flex-wrap: nowrap;
 	justify-content: right;
 	align-items: center;
 	display: flex;
@@ -441,7 +437,6 @@ $categories1: #3838F0;
 $categories2: #F5F5FC;
 
 .post-taxonomy-featured {
-	white-space: nowrap;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #FFF;
@@ -461,7 +456,6 @@ $categories2: #F5F5FC;
 }
 
 .post-taxonomy-series {
-	white-space: nowrap;
 	border-style: solid;
 	border-width: 1px;
 	border-color: $series2;
@@ -481,7 +475,6 @@ $categories2: #F5F5FC;
 }
 
 .post-taxonomy-categories {
-	white-space: nowrap;
 	border-style: solid;
 	border-width: 1px;
 	border-color: $categories2;
@@ -501,7 +494,6 @@ $categories2: #F5F5FC;
 }
 
 .post-taxonomy-tags {
-	white-space: nowrap;
 	border-style: solid;
 	border-width: 1px;
 	border-color: $tags2;
@@ -518,6 +510,9 @@ $categories2: #F5F5FC;
 	background: $tags2; 
 	border-color: $tags1;
 	color: $tags1;
+}
+
+.post-taxonomy- {
 }
 
 /* ============================================================ */
@@ -585,12 +580,9 @@ $categories2: #F5F5FC;
 }
 
 .post-stub-details {
-	flex-wrap: nowrap;
-	white-space: nowrap;
 }
 
 .post-stub-taxonomies {
-	flex-wrap: wrap;
 	margin-left: 30px;
 	text-align: right;
 }
@@ -696,7 +688,10 @@ $categories2: #F5F5FC;
     margin-top: 95px;
     overflow: auto;
 
-    .site-title-wrapper { margin: 80px auto 35px; }
+    .site-title-wrapper { 
+		word-wrap: break-word;
+		margin: 80px auto 35px; 
+	}
 
     .site-title a:hover,
     .button-square:hover {
@@ -724,10 +719,6 @@ $categories2: #F5F5FC;
 /* ============================================================ */
 
 @media only screen and (max-width: 800px) {
-    .post-taxonomy-featured { display: none; }
-	.post-taxonomy-tags { display: none; }
-	.post-taxonomy-series { display: none; }
-	.post-taxonomy-categories { display: none; }
 }
 
 @media only screen and (max-width: 600px) {
@@ -761,9 +752,8 @@ $categories2: #F5F5FC;
             margin-left: 0;
         }
     }
-
+	
     .site-nav-item {
-        display: block;
         margin: 15px 0;
     }
 
@@ -802,11 +792,11 @@ $categories2: #F5F5FC;
         }
     }
 
-    .post-stub-title { display: block; }
+    .post-stub-title { display: inline-block; }
 
     .post-stub-date:before {
         content: "";
-        display: block;
+        display: inline-block;
     }
 
     .post-list {
